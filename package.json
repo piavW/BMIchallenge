@@ -1,0 +1,30 @@
+{
+  "name": "bmichallenge",
+  "version": "1.0.0",
+  "main": "bmichal.js",
+  "scripts": {
+    "test": "npm run features && npm run specs",
+    "features": "superstatic src -p 8080 & mocha --timeout 100000 --recursive  --reporter=spec features ; PORT=8080 npm run stop-test-server ",
+    "specs": "mocha --recursive  --reporter=spec spec",
+    "server": "superstatic src -p 3000",
+    "stop-test-server": "lsof -ti tcp:$PORT | xargs kill"
+  },
+  "bin": {
+    "training-wheels:generate": "./node_modules/e2e_training_wheels/dist/generators.js",
+    "training-wheels:install": "./node_modules/e2e_training_wheels/dist/install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piavW/BMIchallenge.git"
+  },
+  "author": "Pia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piavW/BMIchallenge/issues"
+  },
+  "homepage": "https://github.com/piavW/BMIchallenge#readme",
+  "description": "",
+  "devDependencies": {
+    "e2e_training_wheels": "0.0.36"
+  }
+}
