@@ -1,6 +1,8 @@
 <h1>Notes from week 4 of the ITP-course, the BMI-challenge!</h1>
 .to_f makes things a float
 
+<h2> OBS! spec.helper.js is supposed to be in the rootfolder, i.e. in the bmichallenge folder - not in spec folder! </h2>
+
 
 - <b>Unit testing</b> - pass or fail of short snippets of code to check behaviour.
 - <b> Acceptance testing </b>- making sure the program meets business requirements and if it's delivery ready. exempel or user scenario. 
