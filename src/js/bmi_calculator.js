@@ -11,10 +11,7 @@ function BMICalculator(){
             obj.bmiValue = parseFloat(finalBmi.toFixed(2));
             setBMIMessage(obj);
         }
-    }
-};
-
-function BMICalculator(){
+    };
     BMICalculator.prototype.imperial_bmi = function(obj) {
         let weight = obj.weight;
         let height = obj.height;
@@ -24,7 +21,8 @@ function BMICalculator(){
             setBMIMessage(obj);
         }
     };
-}
+};
+
 
 function setBMIMessage (obj){
     if (obj.bmiValue < 18.5) {
