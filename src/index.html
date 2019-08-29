@@ -3,12 +3,37 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>BMI Calculator deluxe</title>
     <script src="js/person.js"></script>
     <script src="js/bmi_calculator.js"></script>
+   <style>
+       body {
+           background-color: lightblue
+       }
+       div {
+        padding-top: 5px;
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 20px;
+       }
+       form {
+        background-color: white;
+        margin-left:30vw;
+        margin-right:30vw;
+        padding-bottom: 10px;
+       }
+       span {
+           text-align: center;
+           font-family: Helvetica;
+       }
+   </style>
 </head>
 
 <body>
+    <span> 
+        <h1>Welcome to the BMI Calculator deluxe </h1>
+      <p>Here you can calculate your BMI using either metric or imperial units.</p>
+    </span>
 
     
     <form id="calculate">
@@ -22,16 +47,17 @@
         </div>
 
         <div id="metric-inputs">
-            <input type="text" id="weight-in-kgs" placeholder="Weight">
-            <input type="text" id="height-in-cm" placeholder="Height">
+            <input type="text" id="weight-in-kgs" placeholder="Weight in kgs">
+            <input type="text" id="height-in-cm" placeholder="Height in cm">
         </div>
 
         <div id="imperial-inputs">
-                <input type="text" id="weight-in-lbs" placeholder="Weight">
-                <input type="text" id="height-in-in" placeholder="Height">
+                <input type="text" id="weight-in-lbs" placeholder="Weight in lbs">
+                <input type="text" id="height-in-in" placeholder="Height in inches">
         </div>
-
-        <button type="submit" value="Calculate"> Calculate </button>
+        <div>
+            <button type="submit" value="Calculate"> Calculate </button>
+        </div>
     </form>
     <div>
         <span id="display_value"></span>
